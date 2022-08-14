@@ -8,19 +8,21 @@ Method: GET
 Url: /api/test/user
 
 Response:
+```json
 {
     "path": "/api/test/user",
     "error": "Unauthorized",
     "message": "Full authentication is required to access this resource",
     "status": 401
 }
-
+```
 > Registrar un nuevo usuario:
 
 Method: POST 
 Url: /api/auth/signup
 
 Body:
+```json
 {
     "username":"username",
     "email":"user@correo.com",
@@ -30,6 +32,7 @@ Body:
         "user"
     ]
 }
+```
 
 Roles: 
     admin => Administrador
@@ -43,10 +46,12 @@ Url: /api/auth/signin
 Key: Authorization Bearer XXXXXXXX....
 
 Body:
+```json
 {
     "username":"usuariodos",
     "password":"Password321*"
 }
+```
 
 > Test-1 () 
 
