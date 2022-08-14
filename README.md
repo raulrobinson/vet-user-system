@@ -1,13 +1,12 @@
-## JWT Authentication Token with MySQL database
+# JWT Authentication Token with MySQL database
 
 - BD en MySQL
+## Test-0
 
-> Test-0
+- Method: GET
+- Url: /api/test/user
 
-Method: GET
-Url: /api/test/user
-
-Response:
+- Response:
 ```json
 {
     "path": "/api/test/user",
@@ -16,12 +15,12 @@ Response:
     "status": 401
 }
 ```
-> Registrar un nuevo usuario:
+# Registrar un nuevo usuario:
 
-Method: POST 
-Url: /api/auth/signup
+- Method: POST 
+- Url: /api/auth/signup
 
-Body:
+- Body:
 ```json
 {
     "username":"username",
@@ -39,7 +38,7 @@ Roles:
     mod => Moderador
     user => Usuario
 
-> Inicio de sesion de un usuario (Token JWT)
+# Inicio de sesion de un usuario (Token JWT)
 
 Method: POST 
 Url: /api/auth/signin
@@ -53,11 +52,14 @@ Body:
 }
 ```
 
-> Test-1 () 
+# Test-1 () 
 
-Method: GET
-Url: /api/test/user
-Key: Authorization Bearer XXXXXXXX....
+- Method: GET
+- Url: /api/test/user
+- Key: Authorization Bearer XXXXXXXX....
 
-Response: User Content.
+- Response: 
+
+Body:
+User Content.
 
