@@ -1,6 +1,20 @@
 # Microservicio para usuarios del sistema VET Ruta2 - UTP
 
+```
 - Database en MySQL
+database name: "vetsystem"
+database user: "root"
+database pass: "soporte"
+
+en la tabla "roles" hacer SQL e insertar los roles siguientes:
+
+INSERT INTO `roles` (`id`, `name`) VALUES
+(1, 'ROLE_USER'),
+(2, 'ROLE_MODERATOR'),
+(3, 'ROLE_ADMIN');
+
+```
+
 ## Test-0
 
 - Method: GET
