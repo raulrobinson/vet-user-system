@@ -1,15 +1,15 @@
-# JWT Authentication Token with MySQL database
+# Microservicio para usuarios del sistema VET Ruta2 - UTP
 
-- BD en MySQL
+- Database en MySQL
 ## Test-0
 
 - Method: GET
-- Url: /api/test/user
+- Url: /api/public/user
 
 - Response:
 ```json
 {
-    "path": "/api/test/user",
+    "path": "/api/public/user",
     "error": "Unauthorized",
     "message": "Full authentication is required to access this resource",
     "status": 401
@@ -25,19 +25,19 @@
 {
     "username":"username",
     "email":"user@correo.com",
-    "password":"Password",
+    "password":"Password123*",
     "role": [
         "mod", 
         "user"
     ]
 }
 ```
-
+```
 Roles: 
     admin => Administrador
-    mod => Moderador
-    user => Usuario
-
+    mod   => Moderador
+    user  => Usuario
+```
 # Inicio de sesion de un usuario (Token JWT)
 
 Method: POST 
@@ -47,15 +47,15 @@ Key: Authorization Bearer XXXXXXXX....
 Body:
 ```json
 {
-    "username":"usuariodos",
-    "password":"Password321*"
+    "username":"username",
+    "password":"Password123*"
 }
 ```
 
-# Test-1 () 
+# Test-1 via @Param
 
 - Method: GET
-- Url: /api/test/user
+- Url: /api/public/user
 - Key: Authorization Bearer XXXXXXXX....
 
 - Response: 
